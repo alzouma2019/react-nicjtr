@@ -10,3 +10,10 @@ let destination = document.querySelector('#container');
 
 // Store
 let store = createState(counter);
+
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  destination
+);
