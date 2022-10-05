@@ -1,13 +1,9 @@
-import React, { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
-
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import { createState } from 'redux';
+import { Provider } from 'react-redux';
+import counter from './reducer';
 import App from './App';
+import './index.css';
 
-const rootElement = document.getElementById('root');
-const root = createRoot(rootElement);
-
-root.render(
-  <StrictMode>
-    <App />
-  </StrictMode>
-);
+let destination = document.querySelector('#container');
