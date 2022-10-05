@@ -7,3 +7,6 @@ import App from './App';
 import './index.css';
 
 let destination = document.querySelector('#container');
+
+// Store
+let store = createState(counter);
